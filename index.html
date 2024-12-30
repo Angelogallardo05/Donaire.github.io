@@ -22,8 +22,29 @@
             <option value="perro">Perro Caliente</option>
         </select><br>
 
-        <label for="proteinas">Cantidad de Proteínas:</label>
+        <label for="proteinas">Cantidad de Proteínas (1-10):</label>
         <input type="number" id="proteinas" min="1" max="10" value="1"><br>
+
+        <label for="seleccionProteinas">Selecciona Proteínas:</label><br>
+        <input type="checkbox" value="Pollo Desmechado"> Pollo Desmechado<br>
+        <input type="checkbox" value="Pollo Champiñones"> Pollo Champiñones<br>
+        <input type="checkbox" value="Criolla"> Criolla<br>
+        <input type="checkbox" value="Carne Desmechada"> Carne Desmechada<br>
+        <input type="checkbox" value="Chorizo Santarosano"> Chorizo Santarosano<br>
+        <input type="checkbox" value="Chorizo Mexicano"> Chorizo Mexicano<br>
+        <input type="checkbox" value="Carne Asada"> Carne Asada<br>
+        <input type="checkbox" value="Queso Campesino"> Queso Campesino<br>
+        <input type="checkbox" value="Salchicha"> Salchicha<br>
+        <input type="checkbox" value="Carne de Hamburguesa"> Carne de Hamburguesa<br>
+        <input type="checkbox" value="Huevo"> Huevo<br>
+
+        <label for="toppings">Frutas como Topping:</label><br>
+        <input type="checkbox" value="Banano"> Banano<br>
+        <input type="checkbox" value="Fresa"> Fresa<br>
+        <input type="checkbox" value="Mango"> Mango<br>
+
+        <label for="cantidadProducto">Cantidad de este producto:</label>
+        <input type="number" id="cantidadProducto" min="1" max="6" value="1"><br>
 
         <label for="adicionales">Adicionales:</label>
         <input type="checkbox" id="ensaladaFrutas" value="3000"> Ensalada de Frutas - 3,000<br>
@@ -31,11 +52,11 @@
         <input type="checkbox" id="yogurt" value="4000"> Yogurt con Topping - 4,000<br>
 
         <label for="bebidas">Bebidas:</label>
-        <input type="checkbox" id="soda" value="2000"> Soda - 2,000<br>
-        <input type="checkbox" id="agua" value="1500"> Agua - 1,500<br>
+        <input type="number" id="cantidadGaseosa" min="0" value="0"> Gaseosas<br>
+        <input type="number" id="cantidadAgua" min="0" value="0"> Agua<br>
 
         <label for="cigarrillos">Cigarrillos:</label>
-        <input type="checkbox" id="cigarrillos" value="7000"> Cigarrillos - 7,000<br>
+        <input type="number" id="cantidadCigarrillos" min="0" value="0"> Cigarrillos<br>
 
         <button type="button" onclick="agregarPedido()">Agregar Pedido</button>
     </form>
@@ -49,3 +70,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

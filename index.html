@@ -16,7 +16,7 @@
         <select id="producto">
             <option value="arepa">Arepa</option>
             <option value="hamburguesa">Hamburguesa</option>
-            <option value="patacón">Patacón</option>
+            <option value="patacon">Patacón</option>
             <option value="papas">Papas Fritas</option>
             <option value="doritos">Doritos</option>
             <option value="perro">Perro Caliente</option>
@@ -43,7 +43,7 @@
         <input type="checkbox" value="Fresa"> Fresa<br>
         <input type="checkbox" value="Mango"> Mango<br>
 
-        <label for="cantidadProducto">Cantidad de este producto:</label>
+        <label for="cantidadProducto">Cantidad de Arepas:</label>
         <input type="number" id="cantidadProducto" min="1" max="6" value="1"><br>
 
         <label for="adicionales">Adicionales:</label>
@@ -52,11 +52,19 @@
         <input type="checkbox" id="yogurt" value="4000"> Yogurt con Topping - 4,000<br>
 
         <label for="bebidas">Bebidas:</label>
-        <input type="number" id="cantidadGaseosa" min="0" value="0"> Gaseosas<br>
+        <input type="number" id="cantidadPostabon" min="0" value="0"> Postabon<br>
+        <input type="number" id="cantidadTinto" min="0" value="0"> Tinto<br>
+        <input type="number" id="cantidadCafe" min="0" value="0"> Café<br>
+        <input type="number" id="cantidadPanela" min="0" value="0"> Panela<br>
+        <input type="number" id="cantidadCocacola" min="0" value="0"> Coca-Cola<br>
+        <input type="number" id="cantidadCocacolaZero" min="0" value="0"> Coca-Cola Zero<br>
         <input type="number" id="cantidadAgua" min="0" value="0"> Agua<br>
 
         <label for="cigarrillos">Cigarrillos:</label>
         <input type="number" id="cantidadCigarrillos" min="0" value="0"> Cigarrillos<br>
+
+        <label for="hamQueso">¿Desea Jamón y Queso?</label>
+        <input type="checkbox" id="hamQueso"><br>
 
         <button type="button" onclick="agregarPedido()">Agregar Pedido</button>
     </form>

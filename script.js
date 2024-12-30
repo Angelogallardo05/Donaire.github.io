@@ -23,14 +23,21 @@ function agregarPedido() {
 
     pedidos.push(pedido);
     mostrarPedidos();
+    resetForm();
 }
 
 function mostrarPedidos() {
     const listaPedidos = document.getElementById("listaPedidos");
-    listaPedidos.innerHTML = '';
+    listaPedidos.innerHTML = ''; // Limpiar el resumen de pedidos
+
     pedidos.forEach(pedido => {
         listaPedidos.innerHTML += `<li>${pedido.cliente} pidió ${pedido.cantidadProducto} x ${pedido.producto} con ${pedido.proteinas.join(', ')}. Total: ${pedido.totalPedido} COP</li>`;
     });
+}
+
+function resetForm() {
+    // Limpiar los campos del formulario después de un pedido
+    document.getElementById("orderForm").reset();
 }
 
 window.onload = mostrarPedidos;

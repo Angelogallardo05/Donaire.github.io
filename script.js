@@ -1,4 +1,3 @@
-
 let pedidos = [];
 let inventario = {
     arepa: 50,

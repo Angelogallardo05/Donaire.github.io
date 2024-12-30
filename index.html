@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS - Donaire Stop</title>
+    <title>Pedido - Donaire Stop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Punto de Venta - Donaire Stop</h1>
+    <header>
+        <h1>Realizar Pedido</h1>
+        <nav>
+            <a href="inventory.html">Inventario</a>
+        </nav>
+    </header>
+    
     <form id="orderForm">
         <label for="cliente">Nombre del Cliente:</label>
         <input type="text" id="cliente" required><br>
@@ -22,10 +28,10 @@
             <option value="perro">Perro Caliente</option>
         </select><br>
 
-        <label for="proteinas">Cantidad de Proteínas (1-10):</label>
-        <input type="number" id="proteinas" min="1" max="10" value="1"><br>
+        <label for="cantidadProducto">Cantidad:</label>
+        <input type="number" id="cantidadProducto" min="1" max="6" value="1"><br>
 
-        <label for="seleccionProteinas">Selecciona Proteínas:</label><br>
+        <label for="proteinas">Seleccionar Proteínas:</label><br>
         <input type="checkbox" value="Pollo Desmechado"> Pollo Desmechado<br>
         <input type="checkbox" value="Pollo Champiñones"> Pollo Champiñones<br>
         <input type="checkbox" value="Criolla"> Criolla<br>
@@ -38,37 +44,19 @@
         <input type="checkbox" value="Carne de Hamburguesa"> Carne de Hamburguesa<br>
         <input type="checkbox" value="Huevo"> Huevo<br>
 
-        <label for="cantidadProducto">Cantidad de Arepas:</label>
-        <input type="number" id="cantidadProducto" min="1" max="6" value="1"><br>
-
         <label for="jamonQueso">¿Desea Jamón y Queso?</label>
         <input type="checkbox" id="jamonQueso"><br>
-
-        <label for="adicionales">Adicionales:</label>
-        <input type="checkbox" id="ensaladaFrutas" value="3000"> Ensalada de Frutas - 3,000<br>
-        <input type="checkbox" id="salpicon" value="5000"> Salpicón - 5,000<br>
-        <input type="checkbox" id="yogurt" value="4000"> Yogurt con Topping - 4,000<br>
 
         <label for="bebidas">Bebidas:</label>
         <input type="number" id="cantidadPostabon" min="0" value="0"> Postabon<br>
         <input type="number" id="cantidadTinto" min="0" value="0"> Tinto<br>
         <input type="number" id="cantidadCafe" min="0" value="0"> Café<br>
-        <input type="number" id="cantidadPanela" min="0" value="0"> Panela<br>
-        <input type="number" id="cantidadCocacola" min="0" value="0"> Coca-Cola<br>
-        <input type="number" id="cantidadCocacolaZero" min="0" value="0"> Coca-Cola Zero<br>
-        <input type="number" id="cantidadAgua" min="0" value="0"> Agua<br>
-
-        <label for="cigarrillos">Cigarrillos:</label>
-        <input type="number" id="cantidadCigarrillos" min="0" value="0"> Cigarrillos<br>
 
         <button type="button" onclick="agregarPedido()">Agregar Pedido</button>
     </form>
 
     <h2>Resumen de Pedidos</h2>
     <ul id="listaPedidos"></ul>
-
-    <h2>Inventario</h2>
-    <ul id="listaInventario"></ul>
 
     <script src="script.js"></script>
 </body>
